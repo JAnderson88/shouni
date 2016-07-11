@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  genre: MyString
+  e_title: MyString
+  j_title: MyString
+  token: MyString
+
+two:
+  genre: MyString
+  e_title: MyString
+  j_title: MyString
+  token: MyString

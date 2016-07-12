@@ -18,6 +18,10 @@ class HomeController < ApplicationController
   	@jname = an.j_title
   	@response = HTTParty.get("http://hummingbird.me/api/v2/anime/#{@token}.json", headers:{'X-Client-Id'=> auth})
     @titles =  @response.parsed_response["anime"]["titles"]
+    # @vid = "https://www.youtube.com/embed/#{@response.parsed_response["anime"]["youtube_video_id"]}?autoplay=1"
+
+    @vid = "https://www.youtube.com/embed/#{@response.parsed_response['anime']['youtube_video_id']}?autoplay=1&amp;&showinfo=0&amp;rel=0&amp;controls=0&amp;showinfo=0"
+
   end
 
 end

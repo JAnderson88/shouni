@@ -11,7 +11,8 @@ $(".home.search").ready(function(){
 	fadeTitle(".home.search .sidebar", 1200);
 	$(document).mousemove(function(event){
 		if(event.pageX > 110 && event.pageX <= eng_div[1] && event.pageY > eng_div[2] && event.pageY <= eng_div[3]){
-			titleFadeIn($(".home.search .title"), 10, 4000);
+			$(".home.search .title").show();
+			fadeTitle($(".home.search .title",4000));
 		} 
 		if(event.pageX > side_div[0] && event.pageX <= side_div[1] && event.pageY > side_div[2] && event.pageY <= side_div[3]){
 			//titleFadeIn($(".home.search .sidebar"), 10, 1200);
@@ -39,7 +40,7 @@ function setDivAnimation(x){
 }
 function titleFadeIn(divv, time, fadeTime){
 	$(divv).fadeIn(time, function(){
-		fadeTitle(divv, fadeTime);
+		$(divv).fadeOut(fadeTime);
 	});
 }
 

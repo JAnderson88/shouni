@@ -17,7 +17,7 @@ Anime.create!([
   {genre1: "Magic", genre2: "Psychological", genre3: "Thriller", genre4: "Mahou Shoujo", genre5: "Drama", e_title: "Puello Magi Madoka Magica", j_title: "魔法少女まどか☆マギカ", token: "5853"},
   {genre1: "Action", genre2: "Mystery", genre3: "Supernatural", genre4: "", genre5: "", e_title: "Durarara!!", j_title: "デュラララ!!", token: "4696", Youtube:"v8cqCapgcaQ"},
   {genre1: "Action", genre2: "Sci-Fi", genre3: "Polics", genre4: "Thriller", genre5: "", e_title: "Psycho-Pass", j_title: "サイコパス", token: "7000"},
-  {genre1: "Comedy", genre2: "Mystery", genre3: "Supernatural", genre4: "Romance", genre5: "Ecchi", e_title: "bakemonogatari", j_title: "化物語", token: "3919"},
+  {genre1: "Comedy", genre2: "Mystery", genre3: "Supernatural", genre4: "Romance", genre5: "Ecchi", e_title: "Bakemonogatari", j_title: "化物語", token: "3919"},
   {genre1: "Supernatural", genre2: "Romance", genre3: "Fantasy", genre4: "Slice of Life", genre5: "Drama", e_title: "Clannad: After Story", j_title: "クラナド　アフターストーリ", token: "3505"},
   {genre1: "Comedy", genre2: "Supernatural", genre3: "Romance", genre4: "School", genre5: "Slice of Life", e_title: "Clannad", j_title: "クラナド", token: "1962"},
   {genre1: "Adventure", genre2: "Comedy", genre3: "Supernatural", genre4: "Ecchi", genre5: "Game", e_title: "No Game No Life", j_title: "ノーゲーム・ノーライフ", token: "7880"},

@@ -1,6 +1,22 @@
-<body>
+<head><link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"></head>
+
+<div class="title">
+	-Shouni
+</div>
 <div class="video"><%= video_tag "anime_comp1.mp4", autoplay:true, height: "100%", width: "100%", loop: true%>
 </div>
-<div class="search"><%= button_to "Random", search_path, class: "butt"%>
+<!-- <div class="search"><%= button_to "Random", search_path, class: "butt"%>
+</div> -->
+<div class="bar"><%= image_tag "bar2.png", width: "100%", height: "100%" %>
 </div>
-</body>
+<div class="faces_cont">
+	<div class="genre"><%= button_to "Action", search_path,  height: "100%", width: "100%" %></div>
+	<div class="genre"><%= button_to "Adventure", search_path %></div>
+	<div class="genre"><%= button_to "Magic", search_path %></div>
+	<div class="genre"><%= button_to "Mystery", search_path %></div>
+	<div class="genre"><%= button_to "Comedy", search_path %></div>
+	<div class="genre"><%= button_to "Sci-Fi", search_path %></div>
+	<div class="genre"><%= button_to "Romance", search_path %></div>
+	<div class="genre"><%= button_to "Thriller", search_path %></div>
+</div>
+

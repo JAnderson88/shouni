@@ -22,5 +22,9 @@ Anime.create!([
   {genre1: "Comedy", genre2: "Supernatural", genre3: "Romance", genre4: "School", genre5: "Slice of Life", e_title: "Clannad", j_title: "クラナド", token: "1962"},
   {genre1: "Adventure", genre2: "Comedy", genre3: "Supernatural", genre4: "Ecchi", genre5: "Game", e_title: "No Game No Life", j_title: "ノーゲーム・ノーライフ", token: "7880"},
   {genre1: "Action", genre2: "Adventure", genre3: "Comedy", genre4: "Magic", genre5: "Military", e_title: "Fullmetal Alchemist", j_title: "鋼の錬金術師", token: "100", Youtube:"6jIH-UbMP10"},
-  {genre1: "Action", genre2: "Adventure", genre3: "Comedy", genre4: "Supernatural", genre5: "Fantasy", e_title: "Soul Eater", j_title: "ソウルイーター", token: "3128"}
+  {genre1: "Action", genre2: "Adventure", genre3: "Comedy", genre4: "Supernatural", genre5: "Fantasy", e_title: "Soul Eater", j_title: "ソウルイーター", token: "3128"},
+  {genre1:"Drama", genre2:"Horror", genre3:"Thriller", genre4:"", e_title: "Monster", j_title:"モンスター", token:"10", Youtube:"yM0gjM96nxk"},
+  {genre1:"Drama", genre2:"Romance", genre3:"", genre4:"", e_title: "Your Lie in April", j_title:"四月は君の嘘", token:"8403", Youtube:"3aL0gDZtFbE"},
+  {genre1:"Action", genre2:"Adventure", genre3:"Fantasy", genre4:"", e_title: "Noragami", j_title:"ノラガミ", token:"7881"},
+  {genre1:"Action", genre2:"Adventure", genre3:"", genre4:"", e_title: "Hunter x Hunter", j_title:"ハンターハンター", token:"115"}
 ])

@@ -8,23 +8,13 @@
 <!-- <div class="search"><%= button_to "Random", search_path, class: "butt"%>
 </div> -->
 <div class="bar">
-
-<!-- <div class="faces_cont">
-<div class="genre"><%= button_to "Action", search_path,  height: "100%", width: "100%" %></div>
-<div class="genre"><%= button_to "Adventure", search_path %></div>
-<div class="genre"><%= button_to "Magic", search_path %></div>
-<div class="genre"><%= button_to "Mystery", search_path %></div>
-<div class="genre"><%= button_to "Comedy", search_path %></div>
-<div class="genre"><%= button_to "Sci-Fi", search_path %></div>
-<div class="genre"><%= image_tag "bar2.png", width: "100%", height: "100%" %><%= button_to "Romance", search_path %></div>
-<div class="genre"><%= button_to "Thriller", search_path %></div> -->
-<div class="faces">
-	<%= link_to image_tag("romance.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("magic_fantasy.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("mystery.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("comedy.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("scifi.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("thriller_action.png"), search_path, class:"icon", method: :post %>
-	<%= link_to image_tag("adventure.png"), search_path, class:"icon", method: :post %>
-</div>
+	<div class="faces">
+		<%= link_to image_tag("romance.png"), search_path, class:"icon", title:"Romance", method: :post %>
+		<%= link_to image_tag("magic_fantasy.png"), search_path, class:"icon", title:"Magic & Fantasy", method: :post %>
+		<%= link_to image_tag("mystery.png"), search_path, class:"icon", title:"Mystery", method: :post %>
+		<%= link_to image_tag("comedy.png"), search_path, class:"icon", title:"Comedy", method: :post %>
+		<%= link_to image_tag("scifi.png"), search_path, class:"icon", title:"Sci-Fi",method: :post %>
+		<%= link_to image_tag("thriller_action.png"), search_path, class:"icon", title:"Thriller & Action", method: :post %>
+		<%= link_to image_tag("adventure.png"), search_path, class:"icon", title:"Adventure", method: :post %>
+	</div>
 </div>

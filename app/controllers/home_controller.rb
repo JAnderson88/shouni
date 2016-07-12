@@ -27,7 +27,7 @@ class HomeController < ApplicationController
  def romance
   @@anime = []
   getMovieTest("Romance")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -39,7 +39,7 @@ class HomeController < ApplicationController
  def magic
   @@anime = []
   getMovieTest("Magic", "Thriller")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -51,7 +51,7 @@ class HomeController < ApplicationController
  def mystery
   @@anime = []
   getMovieTest("Mystery")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -63,7 +63,7 @@ class HomeController < ApplicationController
  def comedy
   @@anime = []
   getMovieTest("Comedy")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -87,7 +87,7 @@ class HomeController < ApplicationController
  def action
   @@anime = []
   getMovieTest("Action")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -99,7 +99,7 @@ class HomeController < ApplicationController
  def adventure
   @@anime = []
   getMovieTest("Adventure")
-  @@anime.shuffle
+  # @@anime.shuffle
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
@@ -121,10 +121,7 @@ class HomeController < ApplicationController
  def getMovieTest(*args)
     @all = Anime.count
     p @all
-    test = Anime.where(["genre1 IN (:args) OR genre2 IN (:args) OR genre3 IN (:args) OR genre4 IN (:args) OR genre5 IN (:args)", {args: args}])
-    # test.each do |anime|
-    @@anime = test;
-
+    @@anime = Anime.where(["genre1 IN (:args) OR genre2 IN (:args) OR genre3 IN (:args) OR genre4 IN (:args) OR genre5 IN (:args)", {args: args}]).shuffle
   end
 
   def sendTrailer(token)

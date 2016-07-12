@@ -1,7 +1,7 @@
 Anime.create!([
-  {genre1: "Action", genre2: "Adventure", genre3: "Magic", genre4: "Military", genre5: "Fantasy", e_title: "Fullmetal Alchemist: Brotherhood", j_title: "鋼の錬金術師 FULLMETAL ALCHEMIST", token: "3936"},
+  {genre1: "Action", genre2: "Adventure", genre3: "Fantasy", genre4: "Military", genre5: "Drama", e_title: "Fullmetal Alchemist: Brotherhood", j_title: "鋼の錬金術師", token: "3936"},
   {genre1: "Action", genre2: "Super Power", genre3: "Fantasy", genre4: "Drama", genre5: "", e_title: "Attack on Titan", j_title: "進撃の巨人", token: "7442"},
-  {genre1: "Comedy", genre2: "Sci-Fi", genre3: "Mystery", genre4: "Thriller", genre5: "Drama", e_title: "Steins;Gate", j_title: "", token: "5646"},
+  {genre1: "Comedy", genre2: "Sci-Fi", genre3: "Mystery", genre4: "Thriller", genre5: "Drama", e_title: "Steins Gate", j_title: "", token: "5646"},
   {genre1: "Action", genre2: "Adventure", genre3: "Romance", genre4: "Game", genre5: "Fantasy", e_title: "Sword Art Online", j_title: "ソードアート・オンライン", token: "6589"},
   {genre1: "Mystery", genre2: "Supernatural", genre3: "Police", genre4: "Psychological", genre5: "Thriller", e_title: "Death note", j_title: "デスノート", token: "1376"},
   {genre1: "Action", genre2: "Sci-Fi", genre3: "Super Power", genre4: "Military", genre5: "Mecha", e_title: "Code Geass: Lelouch of the Rebellion", j_title: "コードギアス 反逆のルルーシュ", token: "1415"},
@@ -18,7 +18,7 @@ Anime.create!([
   {genre1: "Action", genre2: "Mystery", genre3: "Supernatural", genre4: "", genre5: "", e_title: "Durarara!!", j_title: "デュラララ!!", token: "4696", Youtube:"v8cqCapgcaQ"},
   {genre1: "Action", genre2: "Sci-Fi", genre3: "Polics", genre4: "Thriller", genre5: "", e_title: "Psycho-Pass", j_title: "サイコパス", token: "7000"},
   {genre1: "Comedy", genre2: "Mystery", genre3: "Supernatural", genre4: "Romance", genre5: "Ecchi", e_title: "bakemonogatari", j_title: "化物語", token: "3919"},
-  {genre1: "Supernatural", genre2: "Romance", genre3: "Fantasy", genre4: "Slice of Life", genre5: "Drama", e_title: "Clannad: After Stroy", j_title: "クラナド　アフターストーリ", token: "3505"},
+  {genre1: "Supernatural", genre2: "Romance", genre3: "Fantasy", genre4: "Slice of Life", genre5: "Drama", e_title: "Clannad: After Story", j_title: "クラナド　アフターストーリ", token: "3505"},
   {genre1: "Comedy", genre2: "Supernatural", genre3: "Romance", genre4: "School", genre5: "Slice of Life", e_title: "Clannad", j_title: "クラナド", token: "1962"},
   {genre1: "Adventure", genre2: "Comedy", genre3: "Supernatural", genre4: "Ecchi", genre5: "Game", e_title: "No Game No Life", j_title: "ノーゲーム・ノーライフ", token: "7880"},
   {genre1: "Action", genre2: "Adventure", genre3: "Comedy", genre4: "Magic", genre5: "Military", e_title: "Fullmetal Alchemist", j_title: "鋼の錬金術師", token: "100", Youtube:"6jIH-UbMP10"},

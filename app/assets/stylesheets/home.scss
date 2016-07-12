@@ -80,16 +80,17 @@
   background-color: #000000;
 }
 
-.home.search .title{
+.title{
 
   width: 90%;
   color: white;
   left: 5%;
   text-align: justify;
   margin-left: 5%;
+  z-index: 1;
 }
 
-.home.search #eng{
+#eng{
   font-size: 4em;
   //font-family: 'Source Sans Pro', sans-serif;
   font-family: lato;
@@ -99,11 +100,11 @@
   z-index: 1;
 }
 
-.home.search #jap{
+#jap{
   font-size: 4em;
   margin-left: 3%;
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 iframe {
   position: absolute;
@@ -115,6 +116,7 @@ iframe {
   margin: 0;
   color: #000000;
   border: none;
+  z-index: -5;
 }
 
 .faces {

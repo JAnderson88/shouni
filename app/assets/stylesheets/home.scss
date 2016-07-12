@@ -224,4 +224,14 @@ line-height: 60px;
 .icon img {
   height: 45%;
   width: 55%;
+  // border: 5px solid white;
+  // padding: 10%;
+}
+.icon:hover {
+  opacity: .4;
+  transition: all ease .5s;
+}
+.icon:active {
+  position:relative;
+  top:3px;
 }

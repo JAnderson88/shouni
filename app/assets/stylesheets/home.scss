@@ -202,3 +202,25 @@ height: 65px;
 font-size: 18px;
 line-height: 60px;
 }
+
+.faces {
+  display: flex;
+  width: 90%;
+}
+
+.icon {
+  margin-right: 5%;
+  flex: 1;
+}
+.bar {
+  background-image: url("bar2.png");
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.icon img {
+  height: 45%;
+  width: 55%;
+}

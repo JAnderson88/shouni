@@ -128,7 +128,7 @@ iframe {
   flex: 1;
 }
 .bar {
-  background-image: url("bar2.png");
+  background-image: url(asset-path("bar2.png"));
   height: 150px;
   display: flex;
   justify-content: center;

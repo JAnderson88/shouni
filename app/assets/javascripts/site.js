@@ -5,14 +5,14 @@ $(".home.index").ready(function(){
 });
 
 $(".home.search").ready(function(){
-	fadeTitle(".home.search .title", 4000);
+	fadeTitle(".home.search .title", 15000);
 	var eng_div = setDivAnimation($(".home.search #eng"));
 	//var side_div = setDivAnimation($(".home.search .sidebar"));
-	fadeTitle(".home.search .sidebar", 1200);
+	// fadeTitle(".home.search .sidebar", 1200);
 	$(document).mousemove(function(event){
 		if(event.pageX > 110 && event.pageX <= eng_div[1] && event.pageY > eng_div[2] && event.pageY <= eng_div[3]){
 			$(".home.search .title").show();
-			fadeTitle($(".home.search .title",4000));
+			fadeTitle($(".home.search .title"), 4000);
 		} 
 		if(event.pageX > side_div[0] && event.pageX <= side_div[1] && event.pageY > side_div[2] && event.pageY <= side_div[3]){
 			//titleFadeIn($(".home.search .sidebar"), 10, 1200);
@@ -22,7 +22,7 @@ $(".home.search").ready(function(){
 
 function fadeTitle(x, time){
 	$(x).fadeOut(time, function(){
-
+		$(this).hide();
 	});
 }
 

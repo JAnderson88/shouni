@@ -5,26 +5,23 @@ $(".home.index").ready(function(){
 });
 
 $(".home.search").ready(function(){
-	fadeTitle(".home.search .title", 15000);
-	var eng_div = setDivAnimation($(".home.search #eng"));
-	//var side_div = setDivAnimation($(".home.search .sidebar"));
-	// fadeTitle(".home.search .sidebar", 1200);
-	$(document).mousemove(function(event){
-		if(event.pageX > 110 && event.pageX <= eng_div[1] && event.pageY > eng_div[2] && event.pageY <= eng_div[3]){
-			$(".home.search .title").show();
-			fadeTitle($(".home.search .title"), 4000);
-		} 
-		if(event.pageX > side_div[0] && event.pageX <= side_div[1] && event.pageY > side_div[2] && event.pageY <= side_div[3]){
-			//titleFadeIn($(".home.search .sidebar"), 10, 1200);
-		}
+	var title = $(".home.search .title")
+	title.fadeOut(4000);
+	$(".home.search .trigger").width(title.width());
+	$(".home.search .trigger").height(title.height());
+	// $(".home.search .trigger").css("border", "1px solid white");
+	$(".home.search .trigger").mouseenter(function(){
+		$(".home.search .title").fadeIn(100);
 	});
+	$(".home.search .trigger").mouseleave(function(){
+		$(".home.search .title").fadeOut(4000);
+	});
+	$(".home.search .side").width("12%");
+	$(".home.search .side").height($(document).height() * 0.99);
+	$(".home.search .side").offset({top: "0", left: "0"});
+	$(".home.search .side").css("border", "1px solid white");
+	$(".home.search .side").css("background-color", "rgba(228, 228, 206, 1)");
 });
-
-function fadeTitle(x, time){
-	$(x).fadeOut(time, function(){
-		$(this).hide();
-	});
-}
 
 function setDivAnimation(x){
 	var div_pos = $(x).offset();
@@ -37,10 +34,5 @@ function setDivAnimation(x){
 
 	var arr = [Math.round(div_left), Math.round(div_right), Math.round(div_top), Math.round(div_bottom)];
 	return arr;
-}
-function titleFadeIn(divv, time, fadeTime){
-	$(divv).fadeIn(time, function(){
-		$(divv).fadeOut(fadeTime);
-	});
 }
 

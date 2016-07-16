@@ -112,7 +112,13 @@
 }
 
 .home.screen .side {
-  position: aboslute;
+  position: relative;
+}
+
+.home.screen .sidebar{
+  position: absolute;
+  right: 0;
+
 }
 
 iframe {

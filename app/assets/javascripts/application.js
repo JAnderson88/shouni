@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.readyselector
+//= require transit
 //= require_tree .

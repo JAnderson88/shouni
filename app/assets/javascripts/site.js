@@ -30,6 +30,9 @@ $(".home.search").ready(function(){
 	$(".home.search .side").mouseleave(function(){
 		$(this).transition({x: '-180px'}, 800, 'ease');
 	});
+	$(".home.search .forward").click(function(event){
+		event.preventDefault();
+	});
 });
 
 function setDivAnimation(x){

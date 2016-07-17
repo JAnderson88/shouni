@@ -26,97 +26,22 @@ class HomeController < ApplicationController
   else
 
   end
+  
   @token = @@anime[0].token
   @ename = @@anime[0].e_title
   @jname = @@anime[0].j_title
   @youtube = @@anime[0].Youtube
-  p @youtube
   @vid = sendTrailer(@token, @youtube)
+ 
  end
+
+ def test
+  
+  name = "sword-art-online-ii"
+  @response = HTTParty.get("http://hummingbird.me/api/v2/anime/#{name}.json", headers:{'X-Client-Id'=> AUTH})
+  render :test
  
- # def romance
- #  @@anime = []
- #  getMovieTest("Romance")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
- 
- # def magic
- #  @@anime = []
- #  getMovieTest("Magic", "Thriller")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
-
- # def mystery
- #  @@anime = []
- #  getMovieTest("Mystery")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
-
- # def comedy
- #  @@anime = []
- #  getMovieTest("Comedy")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
-
- # def scifi
- #  @@anime = []
- #  getMovieTest("Sci-Fi")
- #  @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
-
- # def action
- #  @@anime = []
- #  getMovieTest("Action")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
-
- # def adventure
- #  @@anime = []
- #  getMovieTest("Adventure")
- #  # @@anime.shuffle
- #  @token = @@anime[0].token
- #  @ename = @@anime[0].e_title
- #  @jname = @@anime[0].j_title
- #  @youtube = @@anime[0].Youtube
- #  @vid = sendTrailer(@token)
- #  render :search
- # end
+ end
  
  def getMovie
   

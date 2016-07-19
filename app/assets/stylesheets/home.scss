@@ -176,6 +176,32 @@
   align-items: center;
   flex-direction: column;
 }
+.home.search .syn_hid{
+  position: absolute;
+  border: 1px solid white;
+  text-indent: -9999px;
+  overflow: hidden;
+  z-index: 4;
+  width: 2em;
+  height: 2em;
+  bottom: 1em;
+  right: 1em;
+}
+.home.search .synopsis{
+  position: absolute;
+  overflow-y: scroll;
+  padding: 0.8em;
+  background-color: rgba(15,10,10,0.8);
+  font-size: 120%;
+  z-index: 4;
+  border: 1px solid white;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  width: 45em;
+  height: 15em;
+  bottom: 1em;
+  right: 1em;
+}
 
 .icon img {
   height: 45%;
